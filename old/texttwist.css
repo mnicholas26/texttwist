@@ -1,0 +1,116 @@
+body{
+    margin: 0;
+}
+
+#wrapper{
+    width: 100%;
+    background-color: #1a1c18;
+    padding-top: 10px;
+    user-select: none;
+}
+
+#input{
+    position: fixed;
+}
+
+.tiles{
+    width: 600px;
+    margin: auto;
+    text-align: center;
+    padding: 1%;
+    background-color: #ffa700;
+}
+
+/*#currentlySelected{
+    background-color: red;
+}*/
+
+#currentlySelected .tilePlaceholder{
+    border-bottom: #1a1c18 solid 5px;
+}
+
+#tilesOrigin{
+    /*background-color:red;*/
+    margin-top: 30px;
+}
+
+#answers{
+    /*background-color:red;*/
+    margin-top: 30px;
+    width: 80%;
+}
+
+/*#tiles:after{
+    width: 100%;
+    display: inline-block;
+    content: '';
+}*/
+
+.tilePlaceholder{
+    width: 70px;
+    height: 70px;
+    display: inline-block;
+    margin: 6px;
+}
+
+.tile{
+    width: 70px;
+    background-color: red;
+    height: 70px;
+    border: #1a1c18 3px solid;
+    border-radius: 10px;
+    position: absolute;
+    z-index: 1;
+    font-family: sans-serif;
+    font-size: 60px;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.words{
+    display: inline-block;
+    background-color: #1a1c18;
+    vertical-align: top;
+    margin: 5px;
+}
+
+.word{
+    padding: 2px;
+}
+
+.words .tile{
+    height: 21px;
+    width: 21px;
+    border-radius: 3px;
+    border: none;
+    font-size: 18px;
+    position: static;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 1px;
+}
+
+.timer{
+    width: 80px;
+    height: 35px;
+    font-size: 30px;
+    color: #1a1c18;
+    background-color: red;
+    font-family: sans-serif;
+    position: fixed;
+    left: 80%;
+    top: 15%;
+}
+
+.scoreboard{
+    width: 100px;
+    height: 35px;
+    font-size: 30px;
+    color: #1a1c18;
+    background-color: red;
+    font-family: sans-serif;
+    position: fixed;
+    left: 80%;
+    top: 40%;
+}
