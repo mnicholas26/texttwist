@@ -1,0 +1,109 @@
+:root{
+    --background-colour: rgb(0,24,75);
+    --background-colour-light: rgb(0, 54, 105);
+    --text-colour: rgb(255, 190, 0);
+    --button-pressed: #00bdbb;
+}
+
+body{
+    background-color: var(--background-colour);
+    color: var(--text-colour);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    /* font-family: 'Catamaran', sans-serif; */
+    font-family: 'Lemon', sans-serif;
+    overflow: hidden;
+}
+
+#screens{
+    height: 800px;
+    width: 800px;
+    /* background-color: var(--border-colour); */
+    background-color: var(--background-colour);
+}
+
+#screens > div{
+    display: none;
+    height: 100%;
+    width: 100%;
+}
+
+#screens > .selected{
+    display: block;
+}
+
+/* MAIN MENU */
+
+#screens > #mainMenu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 50px 0px;
+}
+
+.btn{
+    cursor: pointer;
+    user-select: none;
+}
+
+#mainMenu .btn:hover{
+    background-color: var(--background-colour-light);
+}
+
+#mainMenu .btn:active{
+    background-color: var(--button-pressed);
+}
+
+#mainMenuOptions{
+    top: 20px;
+    right: 20px;
+    padding: 20px;
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+}
+
+#mainMenuOptionsButton{
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+    background-color: var(--background-colour);
+    display: flex;
+    align-items: center;
+}
+
+#mainMenuOptionsButton > div{
+    height: 90%;
+    width: 90%;
+    content: url(images/options.svg);
+    margin: auto;
+}
+
+#mainMenuTitle{
+    content: url(images/logo.svg);
+    height: 130px;
+}
+
+#mainMenuButtons{
+    margin: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#mainMenuButtons > div{
+    margin-bottom: 20px;
+    height: 60px;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 30px;
+    border-radius: 30px;
+}
