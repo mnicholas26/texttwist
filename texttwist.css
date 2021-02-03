@@ -93,6 +93,7 @@ body{
     margin: auto;
     width: 100%;
     position: relative;
+    user-select: none;
 }
 
 #mainMenuButtonsWrapper > div{
