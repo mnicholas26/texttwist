@@ -18,15 +18,56 @@
                     </div>
                 </div>
                 <div id="mainMenuTitle"></div>
-                <div id="mainMenuButtons">
-                    <div class="btn">Play</div>
-                    <div class="btn">Scoreboard</div>
+                <div id="mainMenuButtonsWrapper">
+                    <div class="selected">
+                        <div id="playbtn" class="btn">Play</div>
+                        <div class="btn">Scoreboard</div>
+                    </div>
+                    <div>
+                        <div class="btn">Easy</div>
+                        <div class="btn">Medium</div>
+                        <div class="btn">Hard</div>
+                        <div id="custombtn" class="btn">Custom</div>
+                        <div id="playbackbtn" class="back btn">
+                            <div></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="option">
+                            <div>Time Limit (Seconds):</div>
+                            <div id="timelimit" class="adjNumberInput">
+                                <div class="decrease btn">
+                                    <div></div>
+                                </div>
+                                <input type="number"></input>
+                                <div class="increase btn">
+                                    <div></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="option">
+                            <div>Word Size:</div>
+                            <div id="wordsizelabel"></div>
+                            <div class="sliderwrapper">
+                                <div id="wordsizeslider" class="slider">
+                                    <div class="slidertrolley">
+                                        <div class="slidericon"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="custombackbtn" class="back btn">
+                            <div></div>
+                        </div>
+                        <div id="customplaybtn" class="btn">Start</div>
+                    </div>
                 </div>
             </div>
             <div id="game"></div>
             <div id="options"></div>
             <div id="gameover"></div>
             <div id="scoreboard"></div>
+            <div id="moregames"></div>
         </div>
     </body>
 </html>

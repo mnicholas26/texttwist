@@ -2,7 +2,7 @@
     --background-colour: rgb(0,24,75);
     --background-colour-light: rgb(0, 54, 105);
     --text-colour: rgb(255, 190, 0);
-    --button-pressed: #00bdbb;
+    --button-pressed: #08bdbb;
 }
 
 body{
@@ -49,6 +49,9 @@ body{
 .btn{
     cursor: pointer;
     user-select: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 #mainMenu .btn:hover{
@@ -73,15 +76,12 @@ body{
     height: 80px;
     width: 80px;
     background-color: var(--background-colour);
-    display: flex;
-    align-items: center;
 }
 
 #mainMenuOptionsButton > div{
     height: 90%;
     width: 90%;
     content: url(images/options.svg);
-    margin: auto;
 }
 
 #mainMenuTitle{
@@ -89,15 +89,19 @@ body{
     height: 130px;
 }
 
-#mainMenuButtons{
+#mainMenuButtonsWrapper{
     margin: auto;
     width: 100%;
-    display: flex;
+    position: relative;
+}
+
+#mainMenuButtonsWrapper > div{
+    display: none;
     flex-direction: column;
     align-items: center;
 }
 
-#mainMenuButtons > div{
+#mainMenuButtonsWrapper > div > div{
     margin-bottom: 20px;
     height: 60px;
     width: 250px;
@@ -106,4 +110,125 @@ body{
     justify-content: space-around;
     font-size: 30px;
     border-radius: 30px;
+}
+
+#mainMenuButtonsWrapper > .selected{
+    display: flex;
+}
+
+#mainMenuButtonsWrapper .back{
+    position: absolute;
+    margin: 0;
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+}
+
+#playbackbtn{
+    top: 0px;
+    left: 150px;
+}
+
+#mainMenuButtonsWrapper .back > div, #mainMenuButtonsWrapper .decrease > div, #mainMenuButtonsWrapper .increase > div{
+    height: 90%;
+    width: 90%;
+    content: url(images/back.svg);
+}
+
+#mainMenuButtonsWrapper .increase > div{
+    transform: rotate(180deg);
+}
+
+#mainMenuButtonsWrapper .option{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+}
+
+#mainMenuButtonsWrapper .adjNumberInput{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#mainMenuButtonsWrapper .adjNumberInput > *{
+    margin: 0px 5px;
+}
+
+#mainMenuButtonsWrapper .adjNumberInput > .btn{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+
+#mainMenuButtonsWrapper input{
+    height: 30px;
+    background-color: transparent;
+    color: var(--text-colour);
+    outline: none;
+    border: 2px solid var(--text-colour);
+    width: 85px;
+    padding: 5px;
+    font-family: 'Lemon', sans-serif;
+    font-size: 25px;
+    text-align: center;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.sliderwrapper{
+    height: 30px;
+    width: 40%;
+    cursor: pointer;
+    border: var(--text-colour) 2px solid;
+    margin: 5px 0;
+    padding: 5px;
+}
+
+.slider{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.slidertrolley{
+    height: 15%;
+    width: 90%;
+    background-color: var(--text-colour);
+    position: relative;
+}
+
+.slidericon{
+    position: absolute;
+    height: 20px;
+    width: 5px;
+    background-color: #faf6cb;
+}
+
+#mainMenuButtonsWrapper .slidericon{
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    top: calc(50% - 7.5px);
+    left: -7.5px;
+}
+
+#wordsizelabel{
+    width: 20px;
+}
+
+#custombackbtn{
+    top: -30px;
+    left: -30px;
 }
