@@ -117,19 +117,10 @@ body{
 }
 
 #mainMenuButtonsWrapper .back{
-    position: absolute;
-    margin: 0;
-    border-radius: 50%;
-    height: 60px;
-    width: 60px;
+    margin: 50px 0;
 }
 
-#playbackbtn{
-    top: 0px;
-    left: 150px;
-}
-
-#mainMenuButtonsWrapper .back > div, #mainMenuButtonsWrapper .decrease > div, #mainMenuButtonsWrapper .increase > div{
+#mainMenuButtonsWrapper .decrease > div, #mainMenuButtonsWrapper .increase > div{
     height: 90%;
     width: 90%;
     content: url(images/back.svg);
@@ -226,9 +217,4 @@ input[type=number] {
 
 #wordsizelabel{
     width: 20px;
-}
-
-#custombackbtn{
-    top: -30px;
-    left: -30px;
 }
